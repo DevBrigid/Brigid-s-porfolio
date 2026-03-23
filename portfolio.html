@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brigid's Portfolio</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <style>
+        /* mobile devices */
+            @media (max-width: 768px) {
+                .hero-section {
+                    flex-direction: column-reverse;
+                    gap: 1rem;
+                }
+
+                .projects-section {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .projects-container {
+                    flex-direction: column-reverse;
+                    gap: 1.5rem;
+                    width: 100%;
+                }
+                .projects-section h2 {
+                    font-size: 3rem;
+                }
+            }
+
+        /* tablet */
+            @media (min-width: 769px) and (max-width: 1024px) {
+                .hero-section {
+                    flex-direction: column-reverse;
+                    padding: 2rem;
+                }
+
+                .projects-section {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .projects-container {
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    width: 100%;
+                }
+                .projects-section h2 {
+                    font-size: 4rem;
+                }
+            }
+       </style>
+    </head>
+    <body class="flex-wrap">
+        <header class="font-extrabold text-9xl text-green-800 pt-20 pl-10 bg-[#FEFADF] w-full">
+            <h1>PORT<br>FOLIO</h1>
+        </header>
+
+        <main>
+            <!--Hero SECTION-->
+            <section class="hero-section bg-[#FEFADF] flex justify-between px-20 py-10 w-full">
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-xl font-bold text-green-800 ">BRIGID MUKAMI</h2>
+                    <p class="text-green-800">Junior Software Developer</p>
+                </div>
+                <img src="coding1.png" alt="Tech art" class="w-[360px] h-80 object-cover object-top">
+            </section>
+
+        <!--ABOUT ME SECTION -->
+            <section class="bg-[#A8B388] w-full ">
+                <div class="pt-10 text-center">
+                    <h2 class="font-extrabold text-9xl text-green-700">WHO AM I?</h2>
+                    <div class="flex flex-wrap items-start justify-evenly px-20 gap-10">
+                        <p class="bg-green-700 text-[#FEFADF] max-w-lg p-10 my-8">I am a graduate of DEKUT and currently studying to become a software engineer. I have a strong interest in solving complex problems and enjoy tackling challenges that require deep thinking and creativity. My love for puzzles naturally drives my approach to coding, where i focus on building efficient and well-structured solutions. I pay close attention to detail and strive to create clean, reliable, and user-friendly applications while continuously improving my skills.</p>
+                        <img src="anime.png" alt="work photo" class="my-8" >
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS DISPLAY SECTION-->
+            <section class="project-section w-full bg-green-800 flex justify-between px-10 py-10 overflow-hidden">
+                <div class="projects-container flex flex-wrap gap-6">
+                    <div class="bg-[#FEFADF] px-10 py-5 ">
+                        <img src="project1.png" alt="project one">
+                        <h3>PROJECT NAME</h3>
+                        <p>DESCRIPTION</p>
+                    </div>
+                    <div class="bg-[#FEFADF] px-10 py-5">
+                        <img src="project1.png" alt="project two">
+                        <h3>PROJECT NAME</h3>
+                        <p>DESCRIPTION</p>
+                    </div>
+                </div>
+               <h2 class="text-9xl text-[#FEFADF] pl-4 self-start font-extrabold pt-10">PERSONAL SKILLS</h2>
+            </section>
+        </main>
+        <footer class="bg-green-800 text-[#FEFADF] text-center py-10">
+            <div class="flex justify-center gap-10">
+                <a href="https://www.linkedin.com/in/brigid-mukami" target="_blank" class="bg-[#FEFADF] text-green-800 font-bold px-6 py-2 hover:bg-green-300 rounded-2xl">LinkedIn</a>
+                <a href="https://github.com/DevBrigid" target="_blank" class="bg-[#FEFADF] text-green-800 font-bold px-6 py-2 hover:bg-green-300 rounded-2xl">GitHub</a>
+                <a href="mailto:mukamibrigid20@gmail.com" class="bg-[#FEFADF] text-green-800 font-bold px-6 py-2 hover:bg-green-300 rounded-2xl">Email</a>
+            </div>
+            <p class="mt-4 text-sm">© 2026 Brigid Mukami</p>
+        </footer>
+    </body>
+</html>
